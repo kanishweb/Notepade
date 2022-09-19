@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  background-color: gold;
+  margin-top: -21px !important;
+  color: white;
+  padding-bottom: 1px;
+}
+.user-icon{
+  display: inline-block;
+    float: right;
+    margin-top: 35px;
+    margin-right: 46px;
+}
+.lgo{
+  width: 140px;
+  float: left;
+  margin-top: 0px;
+}
+.guest{
+  display: block;
+}
+.slide{
+  border: 3px solid #daeff5;
+    margin-top: 14px;
+    padding: 11px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.slide1{
+  
+  margin-top: 14px;
+  padding: 28px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  box-shadow: 2px 8px 9px #0000003b;
+}
+.css-1g04gm2-MuiButtonBase-root-MuiIconButton-root {
+  background-color: #033746 !important;
+}
+.faqs{
+  color: #ffeb00 !important;
+}
+.socialmedia{
+  margin-top: 20px;
+}
+.imgs{
+  background-size: cover;
+    width: 100%;
+}
+
+img.lgo {
+  padding-left: 31%;
+}
+.gustmod{
+  padding-left: 35%;
+  margin-top: 5%;
+}
