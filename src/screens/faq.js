@@ -8,8 +8,12 @@ import Typography from '@mui/material/Typography';
 import Footer from "../compound/footer";
 import Container from '@mui/material/Container';
 import Navbar from "../compound/MenuAppBar";
+// import {useNavigate } from "react-router-dom";
 
 const Accordion = styled((props) => (
+
+
+
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
@@ -46,6 +50,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 function Faqs() {
+
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -95,8 +100,8 @@ function Faqs() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button onClick={()=>{localStorage.setItem('token','tested')
-      localStorage.setItem('username','kanish')
+      <button className='exbtn'  onClick={()=>{localStorage.setItem('token','tested')
+      localStorage.setItem('username','kanish') 
       }} >login</button>
 
 </Container>

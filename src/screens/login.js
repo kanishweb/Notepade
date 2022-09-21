@@ -20,6 +20,7 @@ import Avatar from '@mui/material/Avatar';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Input from '@mui/material/Input';
+import Footer from "../compound/footer";
 
 const theme = createTheme();
 const ariaLabel = { 'aria-label': 'description' };
@@ -32,12 +33,12 @@ const initialFormValue = {
 const Basic = () => {
   const navigate = useNavigate();
 
-  const [showPassword, setShowPassword] = useState('');
+  const [showPassword] = useState('');
 
   const handleSubmit = ({ email, password }, formikHelpers) => {
 
 
-    navigate('/faqs');
+    navigate('/home');
 
   };
 
@@ -179,6 +180,7 @@ const Basic = () => {
           </Grid>
         </Grid>
       </ThemeProvider>
+      <Footer/>
     </div>
   )
 };
