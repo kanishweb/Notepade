@@ -61,7 +61,7 @@ function MenuAppBar() {
           </Grid>
 
           <Grid sm={4} xs={12}>
-          {auth && (
+          {(
             <div className='gustmod'>
               <IconButton
                 size="large"
@@ -86,7 +86,7 @@ function MenuAppBar() {
               style={{paddingTop: 48, paddingLeft: 8}}
             />
           }
-          label={auth ? auth : 'User'}
+          label={auth ? localStorage.getItem('username') :"Guest" }
       
         />
       </FormGroup>
@@ -108,9 +108,8 @@ function MenuAppBar() {
                 style={{marginTop: 46, marginLeft: 22}}
               >
               {
-                auth?<MenuItem onSubmit={handleSubmit} onClick={()=>{localStorage.removeItem('username')}}>logout</MenuItem>:<> 
-             <MenuItem onClick={()=>{navigate('/login')}}>Sign in</MenuItem>
-            <MenuItem onClick={()=>{navigate('/faqs')}}>Regsiter </MenuItem></>
+                auth?  <MenuItem onSubmit={handleSubmit} onClick={()=>{localStorage.removeItem('username')}}>logout</MenuItem>:<MenuItem onClick={()=>{navigate('/login')}}>Sign in</MenuItem> 
+                //  <MenuItem onClick={()=>{navigate('/faqs')}}>Regsiter </MenuItem> </>
              }
              
               </Menu>
