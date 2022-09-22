@@ -18,7 +18,7 @@ function App() {
 <ErrorBoundary>
       <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Landingpage/>}/> 
+          <Route path="/" element={<Landingpage/>} exact/> 
           <Route path="/login"  index element={<Login/>} />
           <Route path="/faqs"   element={<FAQs/>} /> 
           <Route path="/home"   element={<Home/>} /> 
