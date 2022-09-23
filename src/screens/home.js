@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "../compound/MenuAppBar";
 import Footer from "../compound/footer";
 import Container from '@mui/material/Container';
-import Add from "../compound/addlist";
+import Add from "../compound/notelist";
 
 function home() {
   return (
