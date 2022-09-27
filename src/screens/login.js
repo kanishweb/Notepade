@@ -162,7 +162,7 @@ const Basic = () => {
                         onSubmit={handleSubmit}
                         onClick={() => {
                           localStorage.setItem('token', 'tested')
-                          localStorage.setItem('username', initialFormValue)
+                          localStorage.setItem('username', values.email)
                         }}
 
                       >
