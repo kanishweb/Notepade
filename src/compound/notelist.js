@@ -47,6 +47,9 @@ function Addlist() {
 <AddCircleIcon onClick={()=>{navigate('/note')}}></AddCircleIcon>
 <span style={{color: '#918f8d',display:'block'}}>Add Your Note</span>
 </div>
+
+ { task1?.length > 0 && task1.map((item,index) => {
+                      return (
  <div className='listed'>
           
           
@@ -62,8 +65,7 @@ function Addlist() {
                   <TableBody>
                    
                   
-                    { task1?.length > 0 && task1.map((item,index) => {
-                      return (
+                   
                       
                         <TableRow
                             key={item.title}
@@ -89,13 +91,14 @@ function Addlist() {
                         </TableRow>
                   
                     
-                      );
-                        })}
+                    
                 
                   </TableBody>
                 </Table>
               </TableContainer>
                     </div>
+                    );
+                        })}
 
     </div>
   )

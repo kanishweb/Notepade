@@ -17,7 +17,7 @@ import {useNavigate } from "react-router-dom";
 
 
 function MenuAppBar() {
-  const [auth, setAuth] = useState(localStorage.getItem('username')|| false);
+  const [auth, setAuth] = useState(localStorage.getItem('username'));
   const [anchorEl, setAnchorEl] = useState(null);
 
   const navigate=useNavigate();
@@ -108,7 +108,7 @@ function MenuAppBar() {
                 style={{marginTop: 46, marginLeft: 22}}
               >
               {
-                auth?  <MenuItem onSubmit={handleSubmit} onClick={()=>{localStorage.removeItem('username')}}>logout</MenuItem>:<MenuItem onClick={()=>{navigate('/login')}}>Sign in</MenuItem> 
+                auth?  <MenuItem onSubmit={handleSubmit} onClick={()=>{localStorage.removeItem('username')}}>logout</MenuItem>:<MenuItem onClick={navigate('/login')}>Sign in</MenuItem> 
                 //  <MenuItem onClick={()=>{navigate('/faqs')}}>Regsiter </MenuItem> </>
              }
              

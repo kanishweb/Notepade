@@ -10,7 +10,7 @@ function Add() {
   const [title, setTitle] = useState();
   const [description, setDescription] = useState();
 
-  const Swal = require('sweetalert2')
+  
   const navigate = useNavigate();
 
   const [listed, setListed] = useState([]);
@@ -64,9 +64,9 @@ function Add() {
 
 
   }
-  const add= (props ) => {
+  const add= (e ) => {
     
-    addclick(props )
+    addclick()
     navigate('/home',{state:listed})
   }
   const view= (props ) => {
@@ -93,7 +93,7 @@ function Add() {
         <input className='textview2' name='title' type='text' value={title} onChange={(e) => inputchange(e)} placeholder='Enter your Titel' required/><br /><br />
         <textarea   className='textview2' name='description' type='text' value={description} onChange={(e) => inputmail(e)} placeholder='Enter your Description' required data-editor-type="wmd"  cols="42" rows="5" tabindex="101" data-min-length=""></textarea><br /><br />
         <button className='exbtn' onClick={()=> add()} >Add</button>
-        {/* <button className='exbtn'  onClick={() => { navigate('/home',{state:listed}) }}>View</button> */}
+       
       </div>
 
    

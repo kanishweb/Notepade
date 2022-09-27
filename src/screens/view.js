@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+// import {useEffect} from 'react'
 import {useNavigate,useLocation } from "react-router-dom";
 import Navbar from "../compound/MenuAppBar";
 import Footer from "../compound/footer";
@@ -23,7 +23,7 @@ function View() {
    const handleEdit=()=>{
     // setName(allData[i])
     // setEditIndex(i)
-     navigate('/add');
+     navigate('/note');
 }
 
 //    const deleteclick=(index)=>{
