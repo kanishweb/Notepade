@@ -20,11 +20,9 @@ function View() {
    // const[task1,setTask1]=useState(item1);
 
   
-   const handleEdit=()=>{
-    // setName(allData[i])
-    // setEditIndex(i)
-     navigate('/note');
-}
+   const handleEdit = (item) => {
+		navigate('/note', { state: item });
+	};
 
 //    const deleteclick=(index)=>{
 
@@ -34,6 +32,7 @@ function View() {
 //     alert('delete');
 
 //   }
+
   return (
 <div>
 <Navbar />
@@ -59,7 +58,8 @@ function View() {
           </div>
          
         </Grid>
-        <Button className='edit' variant="outlined"  startIcon={<ModeEdit />} onClick={()=>handleEdit()}  >
+        
+        <Button className='edit' variant="outlined"  startIcon={<ModeEdit />} onClick={()=>handleEdit(state)}  >
                                 Edit
                             </Button>
 

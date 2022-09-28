@@ -100,9 +100,7 @@ function Faqs() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <button className='exbtn'  onClick={()=>{localStorage.setItem('token','tested')
-      localStorage.setItem('username','kanish') 
-      }} >login</button>
+     
 
 </Container>
       <Footer/>

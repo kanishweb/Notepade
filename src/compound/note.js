@@ -44,14 +44,14 @@ function Add() {
 		
 	};
   
-	const view = (props) => {
-		addclick(props);
-		navigate('/home', { state: listed });
-	};
-	const edit = (props) => {
-		addclick(props);
-		navigate('/home', { state: listed });
-	};
+	// const view = (props) => {
+	// 	addclick(props);
+	// 	navigate('/home', { state: listed });
+	// };
+	// const edit = (props) => {
+	// 	addclick(props);
+	// 	navigate('/home', { state: listed });
+	// };
 
 	return (
 		<div>

@@ -161,7 +161,7 @@ const Basic = () => {
                         disabled={isSubmitting}
                         onSubmit={handleSubmit}
                         onClick={() => {
-                          localStorage.setItem('token', 'tested')
+                         
                           localStorage.setItem('username', values.email)
                         }}
 
