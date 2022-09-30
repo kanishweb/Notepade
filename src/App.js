@@ -1,5 +1,4 @@
 import './App.css';
-
 import { BrowserRouter, Route,Routes } from 'react-router-dom'
 import Landingpage from "./screens/landingpage";
 import ErrorBoundary from './compound/ErrorBoundary';
@@ -10,7 +9,7 @@ import View from "./screens/view";
 import Home from "./screens/home";
 import Add from "./compound/note";
 import Addlist from "./compound/notelist";
-import Test from "./compound/ex1";
+
 
 function App() {
   return (
@@ -23,10 +22,10 @@ function App() {
           <Route path="/login"  index element={<Login/>} />
           <Route path="/faqs"   element={<FAQs/>} /> 
           <Route path="/home"   element={<Home/>} /> 
-          <Route path="/note"   element={<Add/>} /> 
+          <Route path="/note/:mode"   element={<Add/>} /> 
           <Route path="/view"   element={<View/>} /> 
           <Route path="/notelist"   element={<Addlist/>} /> 
-          <Route path="/test"   element={<Test/>} /> 
+       
           <Route path="*" element={<Error/>} />
 
           

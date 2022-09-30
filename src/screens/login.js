@@ -1,16 +1,10 @@
 import { useState } from "react";
-// import Header from "./Header";
 import { useNavigate } from 'react-router-dom';
-
 import * as React from 'react';
-// import {CircularProgress, FlashAutoOutlined, FlashAutoRounded} from "@mui/icons-material";
 import { Button, } from "@mui/material";
-// import {Yup,Formik,InputComp} from 'formik-yup';
 import * as yup from 'yup';
 import { Formik } from 'formik';
-// import InputComp from "./InputComp";
 import Alert from '@mui/material/Alert';
-// import { Toast } from "bootstrap";
 import Grid from '@mui/material/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -21,7 +15,6 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Input from '@mui/material/Input';
 import Footer from "../compound/footer";
-
 const theme = createTheme();
 const ariaLabel = { 'aria-label': 'description' };
 
@@ -35,7 +28,7 @@ const Basic = () => {
 
   const [showPassword] = useState('');
 
-  const handleSubmit = ({ email, password }, formikHelpers) => {
+  const handleSubmit = () => {
 
 
     navigate('/home');

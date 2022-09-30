@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 import Footer from "../compound/footer";
 import Container from '@mui/material/Container';
 import Navbar from "../compound/MenuAppBar";
-// import {useNavigate } from "react-router-dom";
 
 const Accordion = styled((props) => (
 

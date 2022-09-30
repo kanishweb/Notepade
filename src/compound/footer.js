@@ -2,7 +2,6 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import {FacebookRounded,Twitter,Instagram,Pinterest} from '@mui/icons-material/';
-//import Switch from '@mui/material/Switch';
 import Grid from '@mui/material/Grid';
 import Logo from "../Images/flogo.png";
 import { Link } from '@mui/material';

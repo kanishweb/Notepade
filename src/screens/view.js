@@ -1,4 +1,4 @@
-// import {useEffect} from 'react'
+
 import {useNavigate,useLocation } from "react-router-dom";
 import Navbar from "../compound/MenuAppBar";
 import Footer from "../compound/footer";
@@ -17,21 +17,11 @@ function View() {
 
     const {state}=useLocation();
     const navigate=useNavigate();
-   // const[task1,setTask1]=useState(item1);
 
   
    const handleEdit = (item) => {
 		navigate('/note', { state: item });
 	};
-
-//    const deleteclick=(index)=>{
-
-//     task1.splice(index, 1);
-//     setTask1([...task1]);
-
-//     alert('delete');
-
-//   }
 
   return (
 <div>

@@ -14,44 +14,33 @@ import {
   TableBody,
   Paper,
 } from "@mui/material";
-// import { AddModerator } from "@mui/icons-material";
-// import Add from "./compound/add";
 
 function Addlist() {
   const navigate = useNavigate();
   const { state } = useLocation();
+
   const [task1, setTask1] = useState(state);
-
- 
-
-  
 
   const deleteclick = (index) => {
     task1.splice(index, 1);
     setTask1([...task1]);
 
-
     alert("delete");
   };
- 
-
 
   const View = (item) => {
-    navigate("/view", { state: item });
+    navigate("/note/viewmode", { state: item });
   };
   const handleEdit = (item) => {
-    // setName(allData[i])
-    // setEditIndex(i)
-    navigate("/note", { state: item });
+    navigate("/note/editmode", { state: item });
   };
-
 
   return (
     <div>
       <div className="plus">
         <AddCircleIcon
           onClick={() => {
-            navigate("/note");
+            navigate("/note/addmode");
           }}
         ></AddCircleIcon>
         <span style={{ color: "#918f8d", display: "block" }}>
