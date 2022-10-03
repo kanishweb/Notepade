@@ -14,7 +14,8 @@ import Avatar from '@mui/material/Avatar';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Input from '@mui/material/Input';
-import Footer from "../compound/footer";
+import Footer from "../components/Footer";
+
 const theme = createTheme();
 const ariaLabel = { 'aria-label': 'description' };
 
@@ -23,21 +24,14 @@ const initialFormValue = {
   password: '',
 };
 
-const Basic = () => {
+const Login = () => {
   const navigate = useNavigate();
-
   const [showPassword] = useState('');
-
-  const handleSubmit = () => {
-
-
+  const handleSubmit = ({ email, password }, formikHelpers) => {
     navigate('/home');
-
   };
 
-
   const back = () => {
-
     navigate('/');
   }
 
@@ -64,8 +58,6 @@ const Basic = () => {
 
 
           <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square >
-            
-
             <Box
               sx={{
                 my: 8,
@@ -76,14 +68,12 @@ const Basic = () => {
               }}
             >
 
-
               <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                 <LockOutlinedIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
                 Sign in
               </Typography>
-
 
               <Formik
                 initialValues={initialFormValue}
@@ -154,7 +144,7 @@ const Basic = () => {
                         disabled={isSubmitting}
                         onSubmit={handleSubmit}
                         onClick={() => {
-                         
+                          localStorage.setItem('token', 'tested')
                           localStorage.setItem('username', values.email)
                         }}
 
@@ -165,7 +155,6 @@ const Basic = () => {
                   </form>
                 )}
               </Formik>
-
             </Box>
             <div className='b1'>
               <Button variant="contained" onClick={() => back()}>Back</Button>
@@ -173,9 +162,9 @@ const Basic = () => {
           </Grid>
         </Grid>
       </ThemeProvider>
-      <Footer/>
+      <Footer />
     </div>
   )
 };
 
-export default Basic;
+export default Login;

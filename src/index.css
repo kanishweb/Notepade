@@ -12,35 +12,40 @@ code {
     monospace;
 }
 
-.header{
+.header {
   background-color: gold;
   margin-top: -21px !important;
   color: white;
   padding-bottom: 1px;
 }
-.user-icon{
+
+.user-icon {
   display: inline-block;
-    float: right;
-    margin-top: 35px;
-    margin-right: 46px;
+  float: right;
+  margin-top: 35px;
+  margin-right: 46px;
 }
-.lgo{
+
+.lgo {
   width: 140px;
   float: left;
   margin-top: 0px;
 }
-.guest{
+
+.guest {
   display: block;
 }
-.slide{
+
+.slide {
   border: 3px solid #daeff5;
-    margin-top: 14px;
-    padding: 11px;
-    border-radius: 20px;
-    background-color: aliceblue;
+  margin-top: 14px;
+  padding: 11px;
+  border-radius: 20px;
+  background-color: aliceblue;
 }
-.slide1{
-  
+
+.slide1 {
+
   margin-top: 14px;
   padding: 28px;
   border-radius: 20px;
@@ -48,31 +53,37 @@ code {
   margin-bottom: 40px;
   box-shadow: 2px 8px 9px #0000003b;
 }
+
 .css-1g04gm2-MuiButtonBase-root-MuiIconButton-root {
   background-color: #033746 !important;
 }
-.faqs{
+
+.faqs {
   color: #ffeb00 !important;
 }
-.socialmedia{
+
+.socialmedia {
   margin-top: 20px;
 }
-.imgs{
+
+.imgs {
   background-size: cover;
-    width: 100%;
+  width: 100%;
 }
 
 img.lgo {
   padding-left: 31%;
 }
-.gustmod{
+
+.gustmod {
   padding-left: 35%;
   margin-top: 5%;
 }
-.listedfro2{
+
+.listedfro2 {
   border-radius: 4px;
   background-color: #efefef80;
- 
+
   display: block;
   width: 518px;
   word-spacing: 4px;
@@ -81,7 +92,8 @@ img.lgo {
   margin-left: 385px;
   padding-left: 44px;
 }
-.listedfro{
+
+.listedfro {
   border-radius: 4px;
   background-color: #efefef80;
   margin-top: 45px;
@@ -92,40 +104,45 @@ img.lgo {
   height: auto;
   padding-bottom: 20px;
 }
-.textview2{
+
+.textview2 {
   border: 2px solid #2605b1;
-    border-radius: 5px;
-    padding: 7px 4px;
-    background-color: aliceblue;
-    font-weight: 600;
+  border-radius: 5px;
+  padding: 7px 4px;
+  background-color: aliceblue;
+  font-weight: 600;
 }
 
-.exbtn{
+.exbtn {
   padding: 10px 27px;
-    background-color: #001def;
-    border: 2px solid #010942;
-    border-radius: 7px;
-    color: aliceblue;
-    font-weight: 800;
+  background-color: #001def;
+  border: 2px solid #010942;
+  border-radius: 7px;
+  color: aliceblue;
+  font-weight: 800;
 }
-.h3tx{
+
+.h3tx {
   background-color: blue;
-    padding: 14px 0px;
+  padding: 14px 0px;
 }
-.plus{
+
+.plus {
   margin-top: 50px;
 }
-.listed{
-     
-      margin-top: 60px;
-     
-      width: 40%;
-      background-color: rgb(255, 255, 255);
-      border-radius: 10px;
-      display: inline-block;
+
+.listed {
+
+  margin-top: 60px;
+
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: inline-block;
 }
-.viewed{
+
+.viewed {
   color: rgb(0, 0, 0);
-    font-weight: bold;
-    padding-top: 10px;
+  font-weight: bold;
+  padding-top: 10px;
 }
